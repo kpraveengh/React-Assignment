@@ -1,0 +1,242 @@
+@import "../scss/mixins.scss";
+
+// lato font start
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato/Lato-Bold.woff2') format('woff2'), url('../fonts/lato/Lato-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato/Lato-Italic.woff2') format('woff2'), url('../fonts/lato/Lato-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato/Lato-LightItalic.woff2') format('woff2'), url('../fonts/lato/Lato-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato Hairline';
+  src: url('../fonts/lato/Lato-HairlineItalic.woff2') format('woff2'), url('../fonts/lato/Lato-HairlineItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato/Lato-BlackItalic.woff2') format('woff2'), url('../fonts/lato/Lato-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato/Lato-BoldItalic.woff2') format('woff2'), url('../fonts/lato/Lato-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato/Lato-Regular.woff2') format('woff2'), url('../fonts/lato/Lato-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato Hairline';
+  src: url('../fonts/lato/Lato-Hairline.woff2') format('woff2'), url('../fonts/lato/Lato-Hairline.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato/Lato-Black.woff2') format('woff2'), url('../fonts/lato/Lato-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato/Lato-Light.woff2') format('woff2'), url('../fonts/lato/Lato-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+
+
+// lato font end
+// for removing focust boxshadow for input pseduo classes
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
+// icon css start
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?z4zkis');
+  src: url('../fonts/icomoon.eot?z4zkis#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?z4zkis') format('truetype'), url('../fonts/icomoon.woff?z4zkis') format('woff'), url('../fonts/icomoon.svg?z4zkis#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.pr-10 {
+  padding-right: 10px;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.width-12 {
+  width: 12%;
+}
+
+.width-88 {
+  width: 88%;
+}
+
+.width-68 {
+  width: 68%;
+}
+.width-35 {
+  width: 35%;
+}
+.width-30 {
+  width: 30%;
+}
+
+.h-83 {
+  height: 83% !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.nopage-mainblock {
+  .content-placement {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 90px);
+
+    h4 {
+      color: #333333;
+      font-family: 'Lato';
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    p {
+      color: #333;
+      font-family: 'Lato';
+      font-size: 14px;
+
+      span {
+        color: #009AFF;
+        font-family: 'Lato';
+        font-size: 14px;
+      }
+    }
+
+    span {
+      &.icon-nodoc {
+        font-size: 150px;
+        margin: 50px 0px;
+        color: #D8D8D8;
+        display: inline-block;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.not-found-msg {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  text-transform: capitalize;
+}
+

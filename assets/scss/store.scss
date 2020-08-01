@@ -1,0 +1,146 @@
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.top-block{
+    background: #4b4b4b;
+    height: 100px;
+}
+.popular{
+	margin-bottom: 40px; 
+}
+.top-block h1{
+	text-align: center; 
+  color: #fff;
+  padding-top: 40px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.books-block{
+display: flex;
+flex-wrap: wrap;
+margin: 0px 50px;
+}
+.cart-books-block{
+  display: flex;
+
+  margin: 0px 50px;
+  }
+.book-list-item {
+    border: 1px solid #eee; 
+
+	width:23%; 
+    margin: 1%; 
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 30%;  
+    display: flex;
+    transition: all .2s linear;
+}
+.book-list-item:hover{
+    box-shadow:5px 4px 9px #0000000f
+}
+
+.book-list-item img{
+    display:block;	
+    margin: 10px auto;
+    height:120px
+}
+.book-list-content{
+
+	padding: 10px ; 
+}
+.book-list-item h2{
+	color: #67686d; 
+    font-size: 1.125em;
+    overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 1;
+-webkit-box-orient: vertical;
+}
+.book-list-item h3{
+	color: #67686d;
+	font-size: 0.875em; 
+  font-style:italic;
+}
+.book-list-item p{
+		font-size: 0.625em;		
+        padding: 5px 0 0px 0;
+
+        overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+}
+.price-tag{
+	border-top: 1px solid #eee;
+	padding: 10px 0;
+}
+.price{
+	float: left; 
+  color: #f45a40; 
+	font-size: 0.875em;
+  font-weight: 500;
+}
+.buy-btn{
+    float: right;
+    background:#ffcf41 ;
+    min-width: 90px;
+    color:#fff;
+    border:1px solid #ffcf41;
+    box-shadow: 2px 2px 6px 0px #ffc10799;
+    margin-right: 20px;
+    
+    text-transform: uppercase;
+    padding: 5px 10px;
+
+}
+@media (max-width: 920px) {
+    .book-list-item {
+      flex: 1 50%;
+    }
+  }
+  @media (max-width: 600px) {
+    .product-card {
+      flex: 1 46%;
+    }
+  }
+  .address-form{
+    background: #fcfcfc;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #eee;
+    max-height: 380px;
+  }
+  form{
+    display: grid;
+    width: 100%;
+
+    grid-gap: 10px;
+
+    .input-container{
+        display: flex;
+        flex-direction: column;
+        input{
+            height: 38px;
+            border-radius: 2px;
+            border: 1px solid #eee;
+            padding-left: 5px;
+            outline: none;
+        }
+
+    
+    }
+
+
+}
+.payment-block {
+  padding: 10px;
+  float: right;
+  /* width: 100%; */
+  margin-right: 80px;
+
+
+}
